@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_9" data-name="Layer 9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 130.79 114.66">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: url(#linear-gradient);
+      }
+
+      .cls-1, .cls-2 {
+        fill: #a675fc;
+        stroke-miterlimit: 10;
+        stroke-width: .67px;
+      }
+
+      .cls-2 {
+        stroke: #000;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="42.07" y1="70.33" x2="94.86" y2="70.33" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#553d00"/>
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0" stop-color="#2a0001"/>
+      <stop offset="1" stop-color="#2a000f"/>
+      <stop offset="1" stop-color="#000"/>
+    </linearGradient>
+  </defs>
+  <path class="cls-1" d="M86.53,45.05h-36.13c-4.4,0-8,3.6-8,8v34.56c0,4.4,3.6,8,8,8h36.13c4.4,0,8-3.6,8-8v-34.56c0-4.4-3.6-8-8-8ZM75.63,83.36h-15.38l4.18-10.7c-2.49-1.41-4.18-4.08-4.18-7.15,0-4.53,3.68-8.2,8.21-8.2s8.21,3.67,8.21,8.2c0,3.07-1.69,5.75-4.19,7.15l3.14,10.7Z"/>
+  <path class="cls-2" d="M85.8,45.05s3.65-32.44-18.02-32.05c-21.67.39-18.07,32.05-18.07,32.05h2.87s-3.17-28.41,15.21-28.41,15.24,28.41,15.24,28.41h2.78Z"/>
+</svg>

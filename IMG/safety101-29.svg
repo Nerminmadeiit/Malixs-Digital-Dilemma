@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_9" data-name="Layer 9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.79 114.66">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #f97dcd;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 5.47px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M48.25,60.59c-7.92,10.25-5.15,24.57,3.96,30.56,9.52,6.26,24.53,2.49,30.28-9.81"/>
+  <path class="cls-1" d="M95.7,61.7c7.92-10.25,5.15-24.57-3.96-30.56-9.52-6.26-24.53-2.49-30.28,9.81"/>
+  <line class="cls-1" x1="61.46" y1="76" x2="83.37" y2="45.17"/>
+</svg>

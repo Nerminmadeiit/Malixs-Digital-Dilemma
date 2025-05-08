@@ -1,0 +1,357 @@
+//variables
+$background-color: #efe0ff;
+$footer-color: #a675fc;
+$heading-font: "VT323", monospace;
+$paragraph-font: "arial", sans serif;
+$heading-size: 2.25rem; /* 36px*/
+$paragraph-size: 1rem; /* 16px*/
+$subheading-size: 1.5rem; /* 24px*/
+$h3: 1.25rem; //20px
+$speechbubblep-size: 1.5rem; //24px
+$circle1-color: #f97dcd;
+$circle2-color: #62dabf;
+$circle3-color: #d9bbfe;
+$circle4-color: #c0ecf5;
+$box-section-color: #d9bbfe;
+
+//btn
+@mixin btn($width: 8em) {
+  position: relative;
+  display: inline-block;
+  font-family: "VT323", monospace;
+  width: $width;
+  height: 3.75rem;
+  font-size: 1.5625rem; /*25px*/
+  background-color: #c0c0c0;
+  border: 3px solid #7442bb;
+  color: #7442bb;
+  font-weight: lighter;
+  z-index: 1;
+  transition: all 200ms ease;
+  cursor: pointer;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+  }
+  &::before {
+    border-top: 0.1875rem solid white;
+    border-left: 0.1875rem solid white;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &::after {
+    border-bottom: 0.25rem solid darkgrey;
+    border-right: 0.25rem solid darkgrey;
+    top: 0.1875rem;
+    left: 0.1875rem;
+    right: 0;
+    bottom: 0;
+  }
+  &:hover {
+    border: 0.1875rem solid #a675fc;
+    color: #a675fc;
+  }
+}
+
+@mixin choicebtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem; //20px
+  margin-top: 3.125rem; //50px
+}
+@mixin imgsection-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 6.25rem; //100px
+}
+@mixin imgsection2 {
+  width: 100%;
+  height: auto;
+  max-width: 9.375rem; /*150px*/
+  display: block;
+  margin: 0 auto;
+}
+
+@mixin img-item {
+  margin-top: 6.25rem; //100px
+}
+@mixin heroimg {
+  width: 100%;
+  height: auto;
+  max-width: 12.5rem; //200px
+  display: block;
+  margin: 0 auto;
+}
+@mixin sbimg {
+  width: 100%;
+  height: auto;
+  max-width: 43.75rem; //700px
+  display: block;
+  margin: 0 auto;
+}
+
+@mixin herocontainer {
+  margin-top: 6.25rem; //100px
+}
+
+// Safety101 section – Nesting is used here because the structure doesn't need to change.
+// It makes the code more readable and keeps the elements grouped together.
+
+.infosection1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  .heroimg1 {
+    width: 100%;
+    height: auto;
+    max-width: 12.5rem; //200px
+    display: block;
+    margin: 0 auto;
+  }
+  .line {
+    width: 100%;
+    height: 2px;
+    background-color: #a675fc;
+    margin: 2.5rem 0; //40px
+  }
+}
+@mixin malixwphone {
+  width: 100%;
+  height: auto;
+  max-width: 12.5rem; //200px
+  display: block;
+  margin: 0 auto;
+}
+@mixin h1 {
+  font-size: $heading-size;
+  font-family: $heading-font;
+  text-align: center;
+}
+
+@mixin safety-heading {
+  font-size: $heading-size;
+  font-family: $heading-font;
+  text-align: center;
+  margin: 6.25rem; //100px
+}
+
+@mixin h2 {
+  font-size: $subheading-size;
+  font-family: $paragraph-font;
+  text-align: center;
+}
+
+@mixin p {
+  font-size: $paragraph-size;
+  font-family: $paragraph-font;
+  text-align: center;
+  margin: 1.25rem; //20px
+}
+@mixin speechbubblep {
+  font-size: $speechbubblep-size;
+  font-family: $paragraph-font;
+  text-align: center;
+  font-style: italic;
+  margin-top: 1.875rem; //30px
+}
+
+@mixin h3 {
+  font-size: $h3;
+  font-family: $paragraph-font;
+  text-align: center;
+  margin-bottom: 1.875rem; //30px
+  font-weight: lighter;
+}
+
+@mixin line {
+  width: 100%;
+  height: 0.125rem; //2px
+  background-color: #a675fc;
+  margin: 2.5rem 0; //40px
+}
+@mixin speechbubble {
+  width: 21.875rem; //350px
+  height: 21.875rem; //350px
+  background-color: $circle4-color;
+  border-radius: 1.25rem; //20px
+  display: block;
+  margin: 0 auto;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    64% 75%,
+    51% 100%,
+    39% 76%,
+    0% 75%
+  );
+}
+
+// This mixin is used to keep the popup layout reusable and flexible.
+// I use parameters for background colors so they can easily be changed later
+// without having to go through the entire style manually. The structure itself works well,
+// and the mixin makes it easier to adapt or reuse the design in other parts of the project.
+
+@mixin popup($headcolor: #ac74f0, $bodycolor: #d9bbfe) {
+  .popup-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+  }
+  .popup {
+    background-color: $headcolor;
+    // border: 1px solid #000;
+    max-width: 62.5rem; //1000px
+    padding-top: 1rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: 3.125rem; //50px
+    // margin-bottom: 100px;
+  }
+  .popup-body {
+    background-color: $bodycolor;
+    border: 1px solid #000;
+    max-width: 62.5rem; //1000px
+    width: 100%;
+    height: 100%;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    padding-left: 0.625rem; // 10px
+    padding-right: 0.625rem; // 10px
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .popup-line {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .square1,
+  .square2,
+  .square3 {
+    width: 1.5625rem; //25px
+    height: 1.5625rem; //25px
+    background-color: #efe0ff;
+    border: 0.0625rem solid #000;
+    margin-right: 0.3125rem; //5px
+    margin-bottom: 0.5rem; //8px
+  }
+}
+
+@mixin circle(
+  $color,
+  $position-top: null,
+  $position-bottom: null,
+  $position-lef: null,
+  $position-right: null
+) {
+  background-color: $color;
+  position: absolute;
+  top: $position-top;
+  bottom: $position-bottom;
+  right: $position-right;
+  left: $position-lef;
+  width: 3.125rem; //50px
+  height: 3.125rem;
+  border-radius: 50%;
+}
+//  Outline box 'time to act'
+.outlinebox1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .outlinebox {
+    border: 0.0625rem solid #f97dcd;
+    margin-top: 1.875rem; //30px
+    width: 62.5rem; //1000px
+    padding: 0.0625rem 3.125rem;
+  }
+}
+
+// Tracker img - The tracker could have been interactive with JavaScript, but due to time/complexity, this is just a visual mockup as shown in the prototype.
+
+@mixin tracker {
+  width: 8.125rem; //130px
+  height: 8.125rem; //130px
+  display: block;
+  margin: 0 auto;
+}
+// Boxs in Safety 101
+.boxelement {
+  display: flex;
+  flex-direction: column;
+  margin: 1.25rem; //20px
+
+  .sectioncontainer {
+    width: 100%;
+    padding: 1.25rem; //20px
+    background-color: $box-section-color;
+    border-radius: 0.625rem; //10px
+    margin-top: 1.875rem; //30px
+    margin-bottom: 1.25rem; //20px
+    text-align: center;
+  }
+  .sectioncontainer {
+    transition: all 150ms ease-in-out;
+  }
+
+  .sectioncontainer:hover {
+    transform: scale(1.1);
+  }
+}
+
+@mixin icon-imgs {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+@mixin body-conffetti {
+  background-image: url("../IMG/conffetti1.svg");
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+}
+
+/* FOOTER */
+.footer {
+  background-color: $footer-color;
+  max-width: 100%;
+  padding: 1.25rem; //20px
+  margin-top: 6.25rem; //100px
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.25rem; //20px
+    gap: 0.625rem; //10px
+  }
+  .fa-brands {
+    transition: all 150ms ease-in-out;
+  }
+
+  .fa-brands:hover {
+    transform: scale(1.4);
+  }
+
+  a {
+    margin: 0 0.3125rem; //5px
+    color: white;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,238 @@
+@use "partial";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background-color: partial.$background-color;
+  margin: 0;
+  height: 100%;
+}
+
+html {
+  height: 100svh;
+  min-height: 100%;
+}
+
+header {
+  margin-top: 0;
+}
+
+// HOMEPAGE
+
+.btn {
+  @include partial.btn;
+}
+
+.imgsection2 {
+  @include partial.imgsection-container;
+}
+.imgsection2 {
+  @include partial.imgsection2;
+}
+.img-item {
+  @include partial.img-item;
+}
+.sbimg {
+  @include partial.sbimg;
+}
+
+h1 {
+  @include partial.h1;
+}
+
+.safety-heading {
+  @include partial.safety-heading;
+}
+
+h2 {
+  @include partial.h2;
+}
+
+h3 {
+  @include partial.h3;
+}
+
+p {
+  @include partial.p;
+}
+.speechbubblep {
+  @include partial.speechbubblep;
+}
+.line {
+  @include partial.line;
+}
+
+.herocontainer {
+  @include partial.herocontainer;
+}
+
+//  POPUP
+.popup-1 {
+  @include partial.popup;
+}
+
+//  Choice Buttons
+.choicebtn {
+  @include partial.btn(15em);
+}
+.choicebtn-container {
+  @include partial.choicebtn;
+  margin-top: 100px;
+}
+
+//  Circle decorations
+.circle-content {
+  position: relative;
+}
+
+.circle1 {
+  @include partial.circle(#f97dcd, 20%, null, 1%, null);
+}
+
+.circle2 {
+  @include partial.circle(#62dabf, null, 60%, 90%, null);
+}
+
+.circle3 {
+  @include partial.circle(#d9bbfe, null, 50%, 10%, null);
+}
+
+.circle4 {
+  @include partial.circle(#c0ecf5, 30%, 50%, 5%, null);
+}
+
+.circle5 {
+  @include partial.circle(#f97dcd, 40%, 70%, null, 10%);
+}
+.circle6 {
+  @include partial.circle(#62dabf, null, 80%, 95%, null);
+}
+
+.imgelement {
+  @include partial.icon-imgs;
+}
+
+.boxelement {
+  @import "partial";
+}
+
+.heroimg {
+  @include partial.heroimg;
+}
+
+.trackerimg {
+  @include partial.tracker;
+}
+.outlinebox1 {
+  @import "partial";
+}
+.infosection1 {
+  @import "partial";
+}
+
+.popup1 {
+  @include partial.popup(#f97dcd, #efe0ff);
+  margin: 20px;
+}
+
+.clipped-shape {
+  @include partial.speechbubble;
+}
+
+// conffetti bg
+.conffetti-bg {
+  @include partial.body-conffetti;
+}
+//  Footer
+.footer {
+  @import "partial";
+}
+
+//Media
+
+/* for devices up to 600px wide (mobile) */
+@media (max-width: 600px) {
+  .popup-1,
+  .popup {
+    margin: 50px 20px;
+  }
+}
+
+// /* for devices from 601px - 900px (tablets) */
+// @media (min-width: 601px) and (max-width: 900px) {
+// }
+
+/* for devices over 900px wide (desktop)*/
+@media (min-width: 901px) {
+  .imgelement {
+    max-width: 100px;
+  }
+  .imgsection-container {
+    @include partial.imgsection-container;
+  }
+
+  .imgsection2 {
+    max-width: 100%;
+  }
+  .imgsection2 {
+    transition: all 150ms ease-in-out;
+  }
+
+  .imgsection2:hover {
+    transform: scale(1.2);
+  }
+
+  .footerparagraph {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .heroimg {
+    max-width: 20%;
+  }
+
+  // 2nd page
+  .malixwphone {
+    max-width: 30%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  h1,
+  h2 {
+    font-size: 40px;
+  }
+  .line {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .choicebtn-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .boxelement {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .sectioncontainer {
+    max-width: 30%;
+  }
+
+  .popup1 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+}

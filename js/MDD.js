@@ -5,7 +5,7 @@ let choicesData = [
     choices: [
       {
         id: "start_btn",
-        url: "/2ndpage.html",
+        url: "2ndpage.html",
         title: "Ready to find out how safe (or hacked) you really are?",
         Chose: false,
       },
@@ -18,7 +18,7 @@ let choicesData = [
     choices: [
       {
         id: "are_safe",
-        url: "/bsa.html",
+        url: "bsa.html",
         title: "Tracked: Are You Safe?",
         Chose: false,
       },
@@ -31,19 +31,19 @@ let choicesData = [
     choices: [
       {
         id: "phone_first",
-        url: "/sa.html",
+        url: "sa.html",
         title: "Check Your Phone First",
         Chose: false,
       },
       {
         id: "laptop",
-        url: "/sb.html",
+        url: "sb.html",
         title: "Check Your Laptop/Cam",
         Chose: false,
       },
       {
         id: "chill",
-        url: "/sc.html",
+        url: "sc.html",
         title: "Ignore & Chill",
         Chose: false,
       },
@@ -56,13 +56,13 @@ let choicesData = [
     choices: [
       {
         id: "call-bank",
-        url: "/sd.html",
+        url: "sd.html",
         title: "Call The Bank. Report It",
         Chose: false,
       },
       {
         id: "dncpass",
-        url: "/se.html",
+        url: "se.html",
         title: "Delete & Change The Password",
         Chose: false,
       },
@@ -74,13 +74,13 @@ let choicesData = [
     choices: [
       {
         id: "act-fast",
-        url: "/fc1.html",
+        url: "fc1.html",
         title: "Act fast. Escalate.",
         Chose: false,
       },
       {
         id: "do-nothing",
-        url: "/fc3.html",
+        url: "fc3.html",
         title: "Act fast. Escalate.",
         Chose: false,
       },
@@ -92,13 +92,13 @@ let choicesData = [
     choices: [
       {
         id: "recovery-reset",
-        url: "/fc2.html",
+        url: "fc2.html",
         title: "Recovery Reset",
         Chose: false,
       },
       {
         id: "cyber-help",
-        url: "/fc1.html",
+        url: "fc1.html",
         title: "Get Cyber Help",
         Chose: false,
       },
@@ -110,13 +110,13 @@ let choicesData = [
     choices: [
       {
         id: "try_track",
-        url: "/sf.html",
+        url: "sf.html",
         title: "Try To track The Intruder",
         Chose: false,
       },
       {
         id: "offline_off",
-        url: "/sg.html",
+        url: "sg.html",
         title: "Go offline. Power off.",
         Chose: false,
       },
@@ -129,13 +129,13 @@ let choicesData = [
     choices: [
       {
         id: "pull-plug",
-        url: "/fc2.html",
+        url: "fc2.html",
         title: "Pull The Plug Immediately",
         Chose: false,
       },
       {
         id: "fight-back",
-        url: "/fc3.html",
+        url: "fc3.html",
         title: "Try To Fight Back",
         Chose: false,
       },
@@ -148,13 +148,13 @@ let choicesData = [
     choices: [
       {
         id: "help-now",
-        url: "/fc1.html",
+        url: "fc1.html",
         title: "Cyber Help, Now",
         Chose: false,
       },
       {
         id: "reset-mode",
-        url: "/fc2.html",
+        url: "fc2.html",
         title: "Go Full Reset Mode",
         Chose: false,
       },
@@ -167,13 +167,13 @@ let choicesData = [
     choices: [
       {
         id: "freeze-all",
-        url: "/sh.html",
+        url: "sh.html",
         title: "Call Bank. Freeze All.",
         Chose: false,
       },
       {
         id: "secure-account",
-        url: "/si.html",
+        url: "si.html",
         title: "Secure Your Accounts",
         Chose: false,
       },
@@ -186,13 +186,13 @@ let choicesData = [
     choices: [
       {
         id: "bring-in",
-        url: "/fc1.html",
+        url: "fc1.html",
         title: "Bring in a Specialist",
         Chose: false,
       },
       {
         id: "fix-it",
-        url: "/fc3.html",
+        url: "fc3.html",
         title: "Try To Fix It Yourself",
         Chose: false,
       },
@@ -205,13 +205,13 @@ let choicesData = [
     choices: [
       {
         id: "expert-help",
-        url: "/fc1.html",
+        url: "fc1.html",
         title: "Go To a Cybersecurity Expert",
         Chose: false,
       },
       {
         id: "secure-left",
-        url: "/fc3.html",
+        url: "fc3.html",
         title: "Try To Secure What’s Left",
         Chose: false,
       },
@@ -224,13 +224,13 @@ let choicesData = [
     choices: [
       {
         id: "unlock-safety",
-        url: "/safety101.html",
+        url: "safety101.html",
         title: "Unlock Safety 101",
         Chose: false,
       },
       {
         id: "try-again",
-        url: "/2ndpage.html",
+        url: "2ndpage.html",
         title: "Try Again",
         Chose: false,
       },
@@ -243,13 +243,13 @@ let choicesData = [
     choices: [
       {
         id: "start-over",
-        url: "/index.html",
+        url: "index.html",
         title: "Start Over",
         Chose: false,
       },
       {
         id: "try-again",
-        url: "/2ndpage.html",
+        url: "2ndpage.html",
         title: "Try Again",
         Chose: false,
       },
